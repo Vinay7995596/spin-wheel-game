@@ -90,13 +90,26 @@
 
 .container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   margin: 30px;
+}
+
+@media (min-width:768px) {
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+  }
 }
 
 .container .spinBtn {
@@ -173,7 +186,7 @@
 .heading {
   color: #111;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .input-count {
   display: flex;
@@ -183,21 +196,89 @@
 .main-bg-yodo-application {
   background-size: cover;
   box-shadow: 0 0 0 5px #111;
-  height: 500px;
-  width: 400px;
+  height: 300px;
+  width: 200px;
   margin-top: 10vh;
   border-radius: 20px;
 }
 
+@media (min-width:768px) {
+  .main-bg-yodo-application {
+    background-size: cover;
+    box-shadow: 0 0 0 5px #111;
+    height: 500px;
+    width: 400px;
+    margin-top: 10vh;
+    border-radius: 20px;
+  }
+
+  .button {
+    color: white;
+    background-color: #4c63b6;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 4px;
+    height: 40px;
+  
+  }
+
+  .number-count {
+    color: #111;
+    font-weight: bold;
+    border-color: #111;
+    font-size: 20px;
+    border-radius: 2px;
+    padding-left: 5px;
+  }
+
+  .line {
+    margin: 15px;
+    border: dashed;
+  }
+  .heading {
+    color: #111;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .search-bar-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-color: black;
+    border: solid 1px;
+    margin: 10px;
+  }
+  .eye {
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+  }
+  
+  .eye-separate {
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 40px;
+    margin: 2px;
+  }
+
+  .icon-container {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+  }
+}
+
 .eye {
-  height: 20px;
-  width: 30px;
+  height: 10px;
+  width: 10px;
   margin: 2px;
 }
 
 .eye-separate {
-  height: 20px;
-  width: 30px;
+  height: 10px;
+  width: 10px;
   background-color: orange;
   border-radius: 40px;
   margin: 2px;
@@ -216,7 +297,7 @@
   color: #111;
   font-weight: bold;
   border-color: #111;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 2px;
   padding-left: 5px;
 }
@@ -229,16 +310,18 @@
   padding: 8px 40px 8px 20px;
   display: block;
   border: 0px;
+  width: 10px;
+  height: px;
 }
 
 .button {
   color: white;
   background-color: #4c63b6;
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 10px;
   border-width: 0px;
   border-radius: 4px;
-  height: 40px;
+  height: 20px;
 
 }
 
@@ -249,7 +332,7 @@
   border-color: black;
   border: solid 1px;
   margin: 10px;
-  width: 54vh;
+  height: 20px;
 }
 
 .input-and-file {
@@ -270,8 +353,8 @@
 }
 
 .icon-container {
-  height: 45px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   padding: 5px;
 }
 
@@ -283,7 +366,7 @@
 }
 
 .line {
-  margin: 15px;
+  margin: 25px;
   border: dashed;
 }
 
@@ -313,7 +396,7 @@
   font-size: 16px;
   font-weight: 400;
   width: 82%;
-  margin: 0px;
+  margin: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
